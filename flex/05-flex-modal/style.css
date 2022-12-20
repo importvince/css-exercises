@@ -64,3 +64,38 @@ button.cancel {
   border: 1px solid #ddd;
   color: royalblue;
 }
+
+/* my solution */ /* real solution is much easier, takes advantage of global properties and applies them at highest level. also avoid flex wrap, which worked, but felt wrong. It's actually amazing how little code there is.*/
+
+.modal {
+  display: flex;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 1.1em;
+  align-self: center;
+}
+
+.text {
+  margin: 10px 0px 0px 0px;
+}
+
+.icon {
+  margin: 10px;
+  flex-shrink: 0;
+}
+
+.close-button {
+  margin-left: auto;
+}
+
+.not-icon {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.buttons {
+  margin: 20px 0px 10px 0px;
+}
